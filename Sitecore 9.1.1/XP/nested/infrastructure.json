@@ -120,7 +120,7 @@
     },
     "sitecoreSKU": {
       "type": "string",
-      "allowedValues": [ "Extra Small", "Small", "Medium", "Large", "Extra Large", "Custom Test" ],
+      "allowedValues": [ "Extra Small", "Small", "Medium", "Large", "Extra Large" ],
       "defaultValue": "Extra Small",
       "metadata": {
         "description": "Sitecore SKU controls the sizes and service levels of the provisioned resources"
@@ -299,7 +299,7 @@
     "skuMap": {
       "type": "secureObject",
       "defaultValue": {
-        "Custom Test": {
+        "Extra Small": {
           "siHostingPlan": {
             "SkuName": "B1",
             "SkuCapacity": 1
@@ -379,99 +379,6 @@
             "SkuName": "Standard",
             "Partitions": 1,
             "Replicas": "2"
-          },
-          "redisCache": {
-            "SkuName": "Standard",
-            "SkuFamily": "C",
-            "SkuCapacity": 1
-          },
-          "applicationInsightsPricePlan": {
-            "CurrentBillingFeatures": "Basic",
-            "DataVolumeCap": {
-              "Cap": 0.33
-            }
-          }
-        },
-        "Extra Small": {
-          "siHostingPlan": {
-            "SkuName": "S2",
-            "SkuCapacity": 1
-          },
-          "siHostingPlanIsolated": {
-            "SkuName": "I1",
-            "SkuCapacity": 1
-          },
-          "cmHostingPlan": {
-            "SkuName": "S3",
-            "SkuCapacity": 1
-          },
-          "cmHostingPlanIsolated": {
-            "SkuName": "I2",
-            "SkuCapacity": 1
-          },
-          "cdHostingPlan": {
-            "SkuName": "S2",
-            "SkuCapacity": 1
-          },
-          "cdHostingPlanIsolated": {
-            "SkuName": "I1",
-            "SkuCapacity": 1
-          },
-          "prcHostingPlan": {
-            "SkuName": "S1",
-            "SkuCapacity": 1
-          },
-          "prcHostingPlanIsolated": {
-            "SkuName": "I1",
-            "SkuCapacity": 1
-          },
-          "repHostingPlan": {
-            "SkuName": "S1",
-            "SkuCapacity": 1
-          },
-          "repHostingPlanIsolated": {
-            "SkuName": "I1",
-            "SkuCapacity": 1
-          },
-          "coreSqlDatabase": {
-            "Edition": "Standard",
-            "MaxSize": "268435456000",
-            "ServiceObjectiveLevel": "S1"
-          },
-          "masterSqlDatabase": {
-            "Edition": "Standard",
-            "MaxSize": "268435456000",
-            "ServiceObjectiveLevel": "S1"
-          },
-          "webSqlDatabase": {
-            "Edition": "Standard",
-            "MaxSize": "268435456000",
-            "ServiceObjectiveLevel": "S1"
-          },
-          "poolsSqlDatabase": {
-            "Edition": "Standard",
-            "MaxSize": "268435456000",
-            "ServiceObjectiveLevel": "S0"
-          },
-          "tasksSqlDatabase": {
-            "Edition": "Standard",
-            "MaxSize": "268435456000",
-            "ServiceObjectiveLevel": "S0"
-          },
-          "formsSqlDatabase": {
-            "Edition": "Standard",
-            "MaxSize": "268435456000",
-            "ServiceObjectiveLevel": "S0"
-          },
-          "exmMasterSqlDatabase": {
-            "Edition": "Standard",
-            "MaxSize": "268435456000",
-            "ServiceObjectiveLevel": "S0"
-          },
-          "searchService": {
-            "SkuName": "Standard",
-            "Partitions": 1,
-            "Replicas": "[parameters('searchServiceReplicaCount')]"
           },
           "redisCache": {
             "SkuName": "Standard",
