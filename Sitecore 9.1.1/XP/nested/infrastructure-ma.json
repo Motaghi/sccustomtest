@@ -33,7 +33,7 @@
     },
     "sitecoreSKU": {
       "type": "string",
-      "allowedValues": [ "Extra Small", "Small", "Medium", "Large", "Extra Large" ],
+      "allowedValues": [ "Extra Small", "Small", "Medium", "Large", "Extra Large", "Custom Test" ],
       "defaultValue": "Extra Small",
       "metadata": {
         "description": "Sitecore SKU controls the sizes and service levels of the provisioned resources"
@@ -78,6 +78,13 @@
     "skuMap": {
       "type": "secureObject",
       "defaultValue": {
+        "Custom Test": {
+          "maSqlDatabase": {
+            "Edition": "Standard",
+            "MaxSize": "268435456000",
+            "ServiceObjectiveLevel": "S0"
+          }
+        },
         "Extra Small": {
           "maSqlDatabase": {
             "Edition": "Standard",
